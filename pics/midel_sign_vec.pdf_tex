@@ -49,6 +49,6 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,1.19192589)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{pics/midel_sign_vec.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{midel_sign_vec.pdf}}%
   \end{picture}%
 \endgroup%
