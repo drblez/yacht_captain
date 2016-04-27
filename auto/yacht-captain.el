@@ -79,6 +79,8 @@
     "fig:29"
     "fig:30"
     "fig:31"
+    "fig:32"
+    "fig:33"
     "chap:4")
    (LaTeX-add-index-entries
     "Длина наибольшая"
