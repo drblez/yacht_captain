@@ -2,9 +2,9 @@
  "yacht-captain"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("scrbook" "a4paper" "12pt" "twoside" "final")))
+                     '(("ncc" "a4paper" "12pt" "twoside" "final" "book" "russian" "fittopage" "cyremdash")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("mathtext" "warn") ("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("babel" "russian") ("caption" "font=small") ("placeins" "section") ("extdash" "shortcuts" "cyremdash") ("imakeidx" "texindy")))
+                     '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("placeins" "section") ("ncchdr" "headings")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
@@ -15,35 +15,21 @@
    (TeX-run-style-hooks
     "latex2e"
     "pics/midel_sign_vec"
-    "scrbook"
-    "scrbook12"
-    "mathtext"
+    "ncc"
+    "ncc12"
     "geometry"
     "fontenc"
     "inputenc"
-    "babel"
-    "indentfirst"
-    "misccorr"
-    "epigraph"
     "wrapfig"
-    "graphicx"
-    "caption"
     "placeins"
     "booktabs"
-    "extdash"
-    "desclist"
-    "appendix"
-    "rotating"
-    "multirow"
     "longtable"
     "hyperref"
-    "cmap"
-    "imakeidx"
-    "svg"
-    "amsmath"
-    "xspace")
+    "xspace"
+    "ncchdr"
+    "ncccomma")
    (TeX-add-symbols
-    '("fig" 1)
+    '("ris" 1)
     '("vidx" 2)
     '("ve" 1)
     '("cidx" 2)
