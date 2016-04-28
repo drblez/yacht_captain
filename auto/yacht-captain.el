@@ -27,7 +27,8 @@
     "hyperref"
     "xspace"
     "ncchdr"
-    "ncccomma")
+    "ncccomma"
+    "desclist")
    (TeX-add-symbols
     '("ris" 1)
     '("vidx" 2)
@@ -42,6 +43,8 @@
     "otdo"
     "motdo"
     "Renum"
+    "msq"
+    "gmsq"
     "svgwidth")
    (LaTeX-add-labels
     "fig:1"
@@ -87,6 +90,14 @@
     "fig:36"
     "fig:37"
     "fig:38"
+    "fig:39"
+    "fig:40"
+    "fig:41"
+    "fig:42"
+    "fig:43"
+    "fig:44"
+    "fig:45"
+    "fig:46"
     "chap:4")
    (LaTeX-add-index-entries
     "Длина наибольшая"
