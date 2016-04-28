@@ -62,7 +62,7 @@
     "fig:14"
     "fig:15"
     "fig:16"
-    "tab:3"
+    "tab:1-2"
     "fig:17"
     "fig:18"
     "chap:2"
@@ -82,6 +82,11 @@
     "fig:32"
     "fig:33"
     "fig:34"
+    "tab:2"
+    "fig:35"
+    "fig:36"
+    "fig:37"
+    "fig:38"
     "chap:4")
    (LaTeX-add-index-entries
     "Длина наибольшая"
