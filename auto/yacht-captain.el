@@ -14,7 +14,6 @@
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
-    "pics/midel_sign_vec"
     "ncc"
     "ncc12"
     "geometry"
@@ -28,8 +27,10 @@
     "xspace"
     "ncchdr"
     "ncccomma"
-    "desclist")
+    "desclist"
+    "indentfirst")
    (TeX-add-symbols
+    '("coursespelengs" 1)
     '("ris" 1)
     '("vidx" 2)
     '("ve" 1)
@@ -45,7 +46,19 @@
     "Renum"
     "msq"
     "gmsq"
-    "svgwidth")
+    "IK"
+    "IP"
+    "OIP"
+    "KU"
+    "MK"
+    "OP"
+    "OMP"
+    "Klb"
+    "Kpb"
+    "KK"
+    "KP"
+    "OKP"
+    "MP")
    (LaTeX-add-labels
     "fig:1"
     "fig:2"
@@ -98,7 +111,29 @@
     "fig:44"
     "fig:45"
     "fig:46"
-    "chap:4")
+    "chap:4"
+    "fig:54"
+    "fig:55"
+    "fig:56"
+    "fig:57"
+    "fig:58"
+    "fig:N1"
+    "fig:N2"
+    "fig:N3"
+    "fig:N4"
+    "fig:N5"
+    "fig:N6"
+    "fig:N7"
+    "fig:N8"
+    "fig:N9"
+    "fig:N10"
+    "fig:N11"
+    "fig:N12"
+    "fig:N13"
+    "fig:N14"
+    "tab:N1")
+   (LaTeX-add-environments
+    '("proof" LaTeX-env-args ["argument"] 0))
    (LaTeX-add-index-entries
     "Длина наибольшая"
     "Длина по конструктивной ватерлинии"
