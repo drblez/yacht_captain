@@ -35,6 +35,7 @@
     '("vidx" 2)
     '("ve" 1)
     '("cidx" 2)
+    '("mcyr" 1)
     "lkvl"
     "bkvl"
     "tsr"
@@ -58,7 +59,9 @@
     "KK"
     "KP"
     "OKP"
-    "MP")
+    "MP"
+    "PU"
+    "PUb")
    (LaTeX-add-labels
     "fig:1"
     "fig:2"
@@ -117,6 +120,7 @@
     "fig:56"
     "fig:57"
     "fig:58"
+    "sec:maps"
     "fig:N1"
     "fig:N2"
     "fig:N3"
@@ -131,9 +135,24 @@
     "fig:N12"
     "fig:N13"
     "fig:N14"
-    "tab:N1")
-   (LaTeX-add-environments
-    '("proof" LaTeX-env-args ["argument"] 0))
+    "tab:N1"
+    "fig:N15"
+    "fig:N16"
+    "fig:N25"
+    "fig:N28"
+    "eq:SL"
+    "fig:N31"
+    "fig:N33"
+    "fig:N34"
+    "fig:N36"
+    "fig:N37"
+    "fig:N38"
+    "fig:N40"
+    "fig:N41"
+    "fig:N42"
+    "fig:N43"
+    "fig:N44"
+    "fig:N45")
    (LaTeX-add-index-entries
     "Длина наибольшая"
     "Длина по конструктивной ватерлинии"
