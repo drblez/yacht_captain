@@ -28,7 +28,9 @@
     "ncchdr"
     "ncccomma"
     "desclist"
-    "indentfirst")
+    "indentfirst"
+    "upgreek"
+    "marvosym")
    (TeX-add-symbols
     '("coursespelengs" 1)
     '("ris" 1)
@@ -61,7 +63,10 @@
     "OKP"
     "MP"
     "PU"
-    "PUb")
+    "PUb"
+    "AP"
+    "Ost"
+    "tauAries")
    (LaTeX-add-labels
     "fig:1"
     "fig:2"
@@ -152,7 +157,32 @@
     "fig:N42"
     "fig:N43"
     "fig:N44"
-    "fig:N45")
+    "fig:N45"
+    "fig:N46"
+    "fig:N47"
+    "fig:N48"
+    "fig:N48-1"
+    "fig:N49"
+    "fig:N50"
+    "fig:N51"
+    "fig:N86"
+    "fig:j-title"
+    "fig:j-page-1"
+    "fig:j-page-2"
+    "fig:j-page-3"
+    "fig:j-page-4"
+    "fig:N68"
+    "fig:NPELENGATOR"
+    "fig:N069"
+    "fig:N070"
+    "fig:S1"
+    "fig:S2"
+    "fig:S3"
+    "fig:S4"
+    "fig:S5"
+    "fig:87"
+    "fig:88"
+    "fig:89")
    (LaTeX-add-index-entries
     "Длина наибольшая"
     "Длина по конструктивной ватерлинии"
