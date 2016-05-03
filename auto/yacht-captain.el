@@ -66,7 +66,11 @@
     "PUb"
     "AP"
     "Ost"
-    "tauAries")
+    "tauAries"
+    "tmin"
+    "thr"
+    "tsec"
+    "TSun")
    (LaTeX-add-labels
     "fig:1"
     "fig:2"
@@ -180,9 +184,13 @@
     "fig:S3"
     "fig:S4"
     "fig:S5"
+    "sec:7-1"
     "fig:87"
     "fig:88"
-    "fig:89")
+    "fig:89"
+    "fig:90"
+    "fig:91"
+    "eq:59")
    (LaTeX-add-index-entries
     "Длина наибольшая"
     "Длина по конструктивной ватерлинии"
