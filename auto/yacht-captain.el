@@ -2,7 +2,7 @@
  "yacht-captain"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("ncc" "a4paper" "12pt" "twoside" "final" "book" "russian" "fittopage" "cyremdash")))
+                     '(("ncc" "a4paper" "12pt" "twoside" "final" "book" "russian" "fittopage" "cyremdash" "twocolumn")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("placeins" "section") ("ncchdr" "headings")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
@@ -30,8 +30,16 @@
     "desclist"
     "indentfirst"
     "upgreek"
-    "marvosym")
+    "marvosym"
+    "multirow"
+    "amsfonts"
+    "enumerate"
+    "rotating"
+    "array"
+    "multicol")
    (TeX-add-symbols
+    '("hhmmss" 3)
+    '("hhmm" 2)
     '("coursespelengs" 1)
     '("ris" 1)
     '("vidx" 2)
@@ -43,6 +51,7 @@
     "tsr"
     "gammaV"
     "gr"
+    "grC"
     "midelsign"
     "otdo"
     "motdo"
@@ -70,7 +79,12 @@
     "tmin"
     "thr"
     "tsec"
-    "TSun")
+    "TSun"
+    "tSun"
+    "TNo"
+    "mathNo"
+    "Tgr"
+    "ppp")
    (LaTeX-add-labels
     "fig:1"
     "fig:2"
@@ -190,7 +204,28 @@
     "fig:89"
     "fig:90"
     "fig:91"
-    "eq:59")
+    "fig:113"
+    "eq:59"
+    "eq:60"
+    "eq:61"
+    "eq:62-1"
+    "eq:62-2"
+    "eq:63"
+    "eq:64"
+    "eq:65-1"
+    "eq:65-2"
+    "eq:66"
+    "eq:67"
+    "eq:68"
+    "eq:69"
+    "fig:109"
+    "fig:110"
+    "fig:111"
+    "fig:112"
+    "fig:114"
+    "fig:115"
+    "tab:5"
+    "fig:116")
    (LaTeX-add-index-entries
     "Длина наибольшая"
     "Длина по конструктивной ватерлинии"
