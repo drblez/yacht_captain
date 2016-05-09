@@ -36,7 +36,9 @@
     "enumerate"
     "rotating"
     "array"
-    "multicol")
+    "multicol"
+    "balance"
+    "fixltx2e")
    (TeX-add-symbols
     '("hhmmss" 3)
     '("hhmm" 2)
@@ -171,6 +173,7 @@
     "fig:N37"
     "fig:N38"
     "fig:N40"
+    "tab:signs"
     "fig:N41"
     "fig:N42"
     "fig:N43"
