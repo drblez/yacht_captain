@@ -37,7 +37,8 @@
     "rotating"
     "array"
     "graphicx"
-    "caption")
+    "caption"
+    "xfrac")
    (TeX-add-symbols
     '("hhmmss" 3)
     '("hhmm" 2)
@@ -248,7 +249,20 @@
     "fig:131"
     "fig:132"
     "fig:133"
-    "fig:134")
+    "fig:134"
+    "fig:135"
+    "fig:136"
+    "fig:137"
+    "fig:138"
+    "fig:139"
+    "fig:140"
+    "fig:141"
+    "fig:142"
+    "fig:143"
+    "fig:144"
+    "app:1"
+    "app:2"
+    "app:2a")
    (LaTeX-add-index-entries
     "Длина наибольшая"
     "Длина по конструктивной ватерлинии"
