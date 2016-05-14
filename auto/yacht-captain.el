@@ -59,6 +59,7 @@
     "Renum"
     "msq"
     "gmsq"
+    "kgmsq"
     "IK"
     "IP"
     "OIP"
@@ -241,7 +242,13 @@
     "fig:125"
     "fig:126"
     "fig:127"
-    "fig:128")
+    "fig:128"
+    "fig:129"
+    "fig:130"
+    "fig:131"
+    "fig:132"
+    "fig:133"
+    "fig:134")
    (LaTeX-add-index-entries
     "Длина наибольшая"
     "Длина по конструктивной ватерлинии"
