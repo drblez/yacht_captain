@@ -4,7 +4,7 @@
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("ncc" "a4paper" "12pt" "twoside" "final" "book" "russian" "fittopage" "cyremdash")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("placeins" "section") ("ncchdr" "headings")))
+                     '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("placeins" "section") ("ncchdr" "headings") ("caption" "font=small")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
@@ -36,7 +36,8 @@
     "enumerate"
     "rotating"
     "array"
-    "graphicx")
+    "graphicx"
+    "caption")
    (TeX-add-symbols
     '("hhmmss" 3)
     '("hhmm" 2)
@@ -226,7 +227,21 @@
     "fig:114"
     "fig:115"
     "tab:5"
-    "fig:116")
+    "fig:116"
+    "tab:6"
+    "tab:7"
+    "fig:117"
+    "fig:118"
+    "fig:119"
+    "fig:120"
+    "fig:121"
+    "fig:122"
+    "fig:123"
+    "fig:124"
+    "fig:125"
+    "fig:126"
+    "fig:127"
+    "fig:128")
    (LaTeX-add-index-entries
     "Длина наибольшая"
     "Длина по конструктивной ватерлинии"
