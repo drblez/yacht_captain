@@ -38,7 +38,10 @@
     "array"
     "graphicx"
     "caption"
-    "xfrac")
+    "xfrac"
+    "multicol"
+    "balance"
+    "fixltx2e")
    (TeX-add-symbols
     '("hhmmss" 3)
     '("hhmm" 2)
