@@ -1,7 +1,5 @@
 yacht-captain.idx
-yacht-captain.aux
 yacht-captain.lof
-yacht-captain.log
 yacht-captain.lot
 yacht-captain.out
 yacht-captain.synctex.gz
@@ -13,3 +11,4 @@ _region_.log
 _region_.tex
 yacht-captain.dvi
 *.aux
+*.log
