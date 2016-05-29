@@ -52,9 +52,6 @@
     "graphicx"
     "caption"
     "xfrac"
-    "multicol"
-    "balance"
-    "fixltx2e"
     "accents")
    (TeX-add-symbols
     '("douwidehat" 2)
