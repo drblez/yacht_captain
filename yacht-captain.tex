@@ -26,7 +26,7 @@
 \usepackage{multicol}
 \usepackage{balance}
 \usepackage{fixltx2e}
-
+\usepackage{accents}
 
 %\usepackage{showframe}
 
@@ -91,6 +91,7 @@
 \newcommand{\AP}{\cidx{A}{П}\xspace}
 \newcommand{\Ost}{\ensuremath{{O^{st}}}\xspace}
 \newcommand{\tauAries}{\ensuremath{\uptau^{\text{\Aries}}}\xspace}
+%\newcommand{\tAries}{\ensuremath{t^{\text{\Aries}}}\xspace}
 \newcommand{\tday}{\ensuremath{^\text{д}}\xspace}
 \newcommand{\tmin}{\ensuremath{^\text{м}}\xspace}
 \newcommand{\thr}{\ensuremath{^\text{ч}}\xspace}
@@ -105,6 +106,29 @@
 \newcommand{\ppp}{\ensuremath{\text{п.}}}
 
 \newcolumntype{M}{>{\centering\arraybackslash}m{\dimexpr.25\linewidth-2\tabcolsep}}
+
+\newcommand{\uhat}{\underaccent{\check}}
+
+\newcommand{\uwidehat}[1]{%
+  \mathpalette\douwidehat{#1}%
+}
+
+\makeatletter
+\newcommand{\douwidehat}[2]{%
+  \sbox0{$\m@th#1\widehat{\hphantom{#2}}$}%
+  \sbox2{$\m@th#1x$}
+  \sbox4{$\m@th#1#2$}
+  \dimen0=\ht0
+  \advance\dimen0 -.8\ht2
+  \dimen2=\dp4
+  \rlap{%
+    \raisebox{\dimexpr\dimen0-\dimen2}{%
+      \scalebox{1}[-1]{\box0}%
+    }%
+  }%
+  {#2}%
+}
+\makeatother
 
 \graphicspath{{pics/}}
 

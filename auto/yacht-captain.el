@@ -5,12 +5,12 @@
                      '(("ncc" "a4paper" "12pt" "twoside" "final" "book" "russian" "fittopage" "cyremdash")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("placeins" "section") ("ncchdr" "headings") ("caption" "font=small")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
@@ -54,8 +54,11 @@
     "xfrac"
     "multicol"
     "balance"
-    "fixltx2e")
+    "fixltx2e"
+    "accents")
    (TeX-add-symbols
+    '("douwidehat" 2)
+    '("uwidehat" 1)
     '("hhmmss" 3)
     '("hhmm" 2)
     '("coursespelengs" 1)
@@ -104,7 +107,8 @@
     "TNo"
     "mathNo"
     "Tgr"
-    "ppp")
+    "ppp"
+    "uhat")
    (LaTeX-add-array-newcolumntypes
     "M"))
  :latex)
