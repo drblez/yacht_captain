@@ -56,6 +56,8 @@
    (TeX-add-symbols
     '("douwidehat" 2)
     '("uwidehat" 1)
+    '("grmmss" 3)
+    '("grmm" 2)
     '("hhmmss" 3)
     '("hhmm" 2)
     '("coursespelengs" 1)
