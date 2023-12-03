@@ -25,25 +25,6 @@
 \usepackage{xfrac}
 \usepackage{accents}
 
-%\usepackage{multicol}
-%\usepackage{balance}
-%\usepackage{fixltx2e}
-
-%\usepackage{showframe}
-
-%\usepackage[warn]{mathtext}
-%\usepackage[russian]{babel}
-%\usepackage{misccorr}
-%\usepackage{epigraph}
-%\usepackage{quotchap}
-%\usepackage[shortcuts, cyremdash]{extdash}
-%\usepackage{appendix}
-%\usepackage{cmap}
-%\usepackage[texindy]{imakeidx}
-%\usepackage{svg}
-%\usepackage{amsmath}
-%\usepackage[split]{splitidx}
-
 \makeindex
 
 % висячие и другие строки
@@ -135,6 +116,20 @@
 
 \graphicspath{{pics/}}
 
+% Two required libraries
+\usepackage{xstring}
+\usepackage{catchfile}
+
+% Set user input
+\newcommand{\gitfolder}{.git}             % Relative path to .git folder from .tex file
+\newcommand{\reponame}{worldbank/d4di}    % Name of account and repo. Will be included in URL
+
+\CatchFileDef{\headfull}{\gitfolder/HEAD}{}              % Get path to head file for checked out branch
+\StrGobbleRight{\headfull}{1}[\head]                      % Remove end of line character
+\StrBehind[2]{\head}{/}[\branch]                          % Parse out the path only
+\CatchFileDef{\commit}{\gitfolder/refs/heads/\branch}{}  % Get the content of the branch head
+\StrGobbleRight{\commit}{1}[\commithash]                  % Remove end of line character
+
 \begin{document}
 
 \frontmatter
@@ -172,6 +167,14 @@
 \include{appendix2}
 
 \printindex
+
+\newpage
+
+Адрес исходных файлов \url{https://github.com/drblez/yacht_captain}
+
+Основано на ревизии \texttt{\commit} из ветки \texttt{\branch}.
+
+Скомпилировано \today
 
 \end{document}
 

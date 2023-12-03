@@ -53,7 +53,9 @@
     "graphicx"
     "caption"
     "xfrac"
-    "accents")
+    "accents"
+    "xstring"
+    "catchfile")
    (TeX-add-symbols
     '("douwidehat" 2)
     '("uwidehat" 1)
@@ -108,7 +110,9 @@
     "mathNo"
     "Tgr"
     "ppp"
-    "uhat")
+    "uhat"
+    "gitfolder"
+    "reponame")
    (LaTeX-add-array-newcolumntypes
     "M"))
  :latex)
