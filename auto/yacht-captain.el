@@ -5,13 +5,13 @@
                      '(("ncc" "a4paper" "12pt" "twoside" "final" "book" "russian" "fittopage" "cyremdash")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("placeins" "section") ("ncchdr" "headings") ("caption" "font=small")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
@@ -24,6 +24,7 @@
     "chapter6"
     "chapter7"
     "chapter8"
+    "chapter8-a"
     "chapter9"
     "chapter10"
     "appendix1"
@@ -59,11 +60,14 @@
    (TeX-add-symbols
     '("douwidehat" 2)
     '("uwidehat" 1)
+    '("lp" 1)
+    '("p" 1)
     '("grmmss" 3)
     '("grmm" 2)
     '("hhmmss" 3)
     '("hhmm" 2)
     '("coursespelengs" 1)
+    '("rris" 1)
     '("ris" 1)
     '("vidx" 2)
     '("ve" 1)
@@ -113,6 +117,8 @@
     "uhat"
     "gitfolder"
     "reponame")
+   (LaTeX-add-labels
+    "par:#1")
    (LaTeX-add-array-newcolumntypes
     "M"))
  :latex)

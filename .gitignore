@@ -13,3 +13,5 @@ yacht-captain.dvi
 *.aux
 *.log
 .DS_Store
+*.*#
+*.*~
