@@ -12,7 +12,23 @@
    (LaTeX-add-labels
     "fig:pp01"
     "fig:pp02"
-    "fig:pp03")
+    "fig:pp03"
+    "fig:pp04"
+    "fig:pp05"
+    "fig:pp06"
+    "fig:pp07"
+    "fig:pp08"
+    "fig:pp09"
+    "fig:pp10"
+    "fig:pp11"
+    "fig:pp12"
+    "fig:pp13"
+    "fig:pp14"
+    "fig:pp15"
+    "fig:pp15a"
+    "fig:pp16"
+    "fig:pp17"
+    "fig:pp18")
    (LaTeX-add-index-entries
     "облака!база"))
  :latex)
