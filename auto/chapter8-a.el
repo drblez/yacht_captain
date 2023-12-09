@@ -12,6 +12,8 @@
    (LaTeX-add-labels
     "fig:pp01"
     "fig:pp02"
+    "fig:pp-n4-1"
+    "fig:pp-n4-2"
     "fig:pp03"
     "fig:pp04"
     "fig:pp05"
