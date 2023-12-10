@@ -2,7 +2,7 @@
  "yacht-captain"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("ncc" "a4paper" "12pt" "twoside" "final" "book" "russian" "fittopage" "cyremdash")))
+                     '(("ncc" "a4paper" "12pt" "twoside" "final" "book" "russian" "fittopage" "cyremdash" "openright")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("babel" "russian") ("placeins" "section") ("ncchdr" "headings") ("caption" "font=small")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
@@ -24,7 +24,6 @@
     "chapter6"
     "chapter7"
     "chapter8"
-    "chapter8-a"
     "chapter9"
     "chapter10"
     "appendix1"
@@ -57,6 +56,7 @@
     "caption"
     "xfrac"
     "accents"
+    "tikz"
     "xstring"
     "catchfile")
    (TeX-add-symbols
@@ -88,6 +88,7 @@
     "msq"
     "gmsq"
     "kgmsq"
+    "speedms"
     "IK"
     "IP"
     "OIP"
@@ -117,8 +118,7 @@
     "Tgr"
     "ppp"
     "uhat"
-    "gitfolder"
-    "reponame")
+    "gitfolder")
    (LaTeX-add-labels
     "par:#1")
    (LaTeX-add-array-newcolumntypes

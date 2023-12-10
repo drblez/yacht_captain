@@ -1,4 +1,4 @@
-\documentclass[a4paper, 12pt, twoside, final, book, russian, fittopage, cyremdash]{ncc}
+\documentclass[a4paper, 12pt, twoside, final, book, russian, fittopage, cyremdash, openright]{ncc}
 \usepackage[a4paper]{geometry}
 \geometry{verbose, tmargin=3cm, bmargin=3cm, lmargin=2cm, rmargin=1.5cm, headheight=1cm, headsep=1cm, footskip=1.5cm}
 \usepackage[T2A]{fontenc}
@@ -26,6 +26,7 @@
 \usepackage[font=small]{caption}
 \usepackage{xfrac}
 \usepackage{accents}
+\usepackage{tikz}
 
 \makeindex
 
@@ -58,6 +59,7 @@
 \newcommand{\msq}{~м\ensuremath{^2}\xspace}
 \newcommand{\gmsq}{~г/м$^2$\xspace}
 \newcommand{\kgmsq}{~кг/м$^2$\xspace}
+\newcommand{\speedms}{~м$/$с\xspace}
 \newcommand{\coursespelengs}[1]{\ensuremath{\text{\textit{#1}}}\xspace}
 \newcommand{\IK}{\coursespelengs{ИК}}
 \newcommand{\IP}{\coursespelengs{ИП}}
@@ -129,7 +131,6 @@
 
 % Set user input
 \newcommand{\gitfolder}{.git}             % Relative path to .git folder from .tex file
-\newcommand{\reponame}{worldbank/d4di}    % Name of account and repo. Will be included in URL
 
 \CatchFileDef{\headfull}{\gitfolder/HEAD}{}              % Get path to head file for checked out branch
 \StrGobbleRight{\headfull}{1}[\head]                      % Remove end of line character
@@ -142,6 +143,14 @@
 \frontmatter
 
 \include{title}
+
+\newpage
+
+Адрес исходных файлов \url{https://github.com/drblez/yacht_captain}
+
+Основано на ревизии \texttt{\commit} из ветки \texttt{\branch}.
+
+Скомпилировано \today
 
 {\small \tableofcontents}
 {\small \listoffigures}
@@ -164,7 +173,6 @@
 \include{chapter6}
 \include{chapter7}
 \include{chapter8}
-\include{chapter8-a}
 \include{chapter9}
 \include{chapter10}
 
@@ -175,14 +183,6 @@
 \include{appendix2}
 
 \printindex
-
-\newpage
-
-Адрес исходных файлов \url{https://github.com/drblez/yacht_captain}
-
-Основано на ревизии \texttt{\commit} из ветки \texttt{\branch}.
-
-Скомпилировано \today
 
 \end{document}
 

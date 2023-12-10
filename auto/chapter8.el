@@ -9,6 +9,8 @@
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
+   (TeX-run-style-hooks
+    "chapter8-a")
    (LaTeX-add-labels
     "fig:109"
     "fig:110"

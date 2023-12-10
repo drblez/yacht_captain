@@ -12,8 +12,6 @@
    (LaTeX-add-labels
     "fig:pp01"
     "fig:pp02"
-    "fig:pp-n4-1"
-    "fig:pp-n4-2"
     "fig:pp03"
     "fig:pp04"
     "fig:pp05"
@@ -25,12 +23,17 @@
     "fig:pp11"
     "fig:pp12"
     "fig:pp13"
+    "fig:pp-n211"
+    "fig:pp-n220"
     "fig:pp14"
     "fig:pp15"
     "fig:pp15a"
     "fig:pp16"
     "fig:pp17"
-    "fig:pp18")
+    "fig:pp18"
+    "sec:waves_on_sea"
+    "fig:pp22"
+    "sec:evasion_from_cyclones")
    (LaTeX-add-index-entries
     "облака!база"))
  :latex)
