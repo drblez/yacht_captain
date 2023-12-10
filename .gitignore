@@ -15,3 +15,5 @@ yacht-captain.dvi
 .DS_Store
 *.*#
 *.*~
+.#*
+*.bak

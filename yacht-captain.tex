@@ -138,6 +138,8 @@
 \CatchFileDef{\commit}{\gitfolder/refs/heads/\branch}{}  % Get the content of the branch head
 \StrGobbleRight{\commit}{1}[\commithash]                  % Remove end of line character
 
+\setcounter{tocdepth}{3}
+
 \begin{document}
 
 \frontmatter

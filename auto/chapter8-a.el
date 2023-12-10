@@ -33,7 +33,11 @@
     "fig:pp18"
     "sec:waves_on_sea"
     "fig:pp22"
-    "sec:evasion_from_cyclones")
+    "sec:evasion_from_cyclones"
+    "fig:pp23"
+    "fig:pp24"
+    "fig:pp25"
+    "fig:pp26")
    (LaTeX-add-index-entries
     "облака!база"))
  :latex)
