@@ -18,6 +18,8 @@
     "fig:141"
     "fig:142"
     "fig:143"
-    "fig:144"))
+    "fig:144")
+   (LaTeX-add-environments
+    '("verse" LaTeX-env-args ["argument"] 0)))
  :latex)
 

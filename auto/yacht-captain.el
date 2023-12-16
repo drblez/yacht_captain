@@ -51,6 +51,7 @@
     "upgreek"
     "marvosym"
     "multirow"
+    "multicol"
     "amsfonts"
     "enumerate"
     "rotating"
@@ -126,6 +127,8 @@
     "gitfolder")
    (LaTeX-add-labels
     "par:#1")
+   (LaTeX-add-environments
+    '("verse" LaTeX-env-args ["argument"] 0))
    (LaTeX-add-array-newcolumntypes
     "M"))
  :latex)
