@@ -5,6 +5,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{extdash}
 \usepackage[russian]{babel}
+% \usepackage[xindy,truexindy]{imakeidx}
 \usepackage{wrapfig}
 \usepackage[section]{placeins}
 \usepackage{booktabs}
@@ -27,6 +28,12 @@
 \usepackage{xfrac}
 \usepackage{accents}
 \usepackage{tikz}
+
+\usepackage[export]{adjustbox}
+
+% \makeindex[
+%   options= -M yacht_captain -L russian -C utf8 -v -t yacht_captain.xindy.log
+% ]
 
 \makeindex
 
@@ -94,6 +101,8 @@
 \newcommand{\ppp}{\ensuremath{\text{п.}}}
 \newcommand{\grmm}[2]{\ensuremath{#1\gr\,#2'}}
 \newcommand{\grmmss}[3]{\ensuremath{#1\gr\,#2'\,#3''}}
+
+\newcommand{\CCBYSA}[1]{\href{https://creativecommons.org/licenses/by-sa/3.0/}{CC BY-SA #1.0}}
 
 \newcommand{\p}[1]{\paragraph{#1.}\label{par:#1}}
 \newcommand{\lp}[1]{#1~\pageref{par:#1}}
@@ -193,4 +202,5 @@
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: t
+%%% TeX-command-extra-options: "-shell-escape"
 %%% End:

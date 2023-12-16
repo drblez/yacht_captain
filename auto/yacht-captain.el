@@ -1,10 +1,12 @@
 (TeX-add-style-hook
  "yacht-captain"
  (lambda ()
+   (setq TeX-command-extra-options
+         "-shell-escape")
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("ncc" "a4paper" "12pt" "twoside" "final" "book" "russian" "fittopage" "cyremdash" "openright")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("babel" "russian") ("placeins" "section") ("ncchdr" "headings") ("caption" "font=small")))
+                     '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("babel" "russian") ("placeins" "section") ("ncchdr" "headings") ("caption" "font=small") ("adjustbox" "export")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
@@ -58,6 +60,7 @@
     "xfrac"
     "accents"
     "tikz"
+    "adjustbox"
     "xstring"
     "catchfile")
    (TeX-add-symbols
@@ -65,6 +68,7 @@
     '("uwidehat" 1)
     '("lp" 1)
     '("p" 1)
+    '("CCBYSA" 1)
     '("grmmss" 3)
     '("grmm" 2)
     '("hhmmss" 3)

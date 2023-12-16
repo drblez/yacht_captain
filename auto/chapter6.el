@@ -1,13 +1,15 @@
 (TeX-add-style-hook
  "chapter6"
  (lambda ()
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (setq TeX-command-extra-options
+         "-shell-escape")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (LaTeX-add-labels
     "chap:6"
@@ -133,6 +135,25 @@
     "течение!периодическое"
     "течение!временное"
     "течение!случайное"
-    "течение!приливно-отливное"))
+    "течение!приливно-отливное"
+    "обсервованное место"
+    "невязка"
+    "навигационные параметры"
+    "навигационная изолиния"
+    "линия положения"
+    "треугольник погрешностей"
+    "лаг!голландский"
+    "лаг!ручной"
+    "главный компас"
+    "компас!главный"
+    "путевой компас"
+    "компас!путевой"
+    "пеленгатор"
+    "пеленгатор!оптический"
+    "пеленгатор!электронный"
+    "лаг"
+    "эхолот"
+    "лот ручной"
+    "футшток"))
  :latex)
 
