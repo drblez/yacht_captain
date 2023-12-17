@@ -67,7 +67,8 @@
     "subcaption"
     "adjustbox"
     "xstring"
-    "catchfile")
+    "catchfile"
+    "microtype")
    (TeX-add-symbols
     '("douwidehat" 2)
     '("uwidehat" 1)
