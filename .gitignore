@@ -17,3 +17,7 @@ yacht-captain.dvi
 *.*~
 .#*
 *.bak
+*.fls
+*.xlg
+*.fdb*
+*.pdf

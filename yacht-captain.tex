@@ -10,7 +10,8 @@
 \usepackage[scaled=0.9]{PTSans}
 \usepackage[scaled=0.9]{PTMono}
 \usepackage{extdash}
-\usepackage[xindy,truexindy]{imakeidx}
+% \usepackage[xindy]{imakeidx}
+% \usepackage{index}
 \usepackage{wrapfig}
 \usepackage[section]{placeins}
 \usepackage{booktabs}
@@ -39,11 +40,11 @@
 \usepackage{xstring}
 \usepackage{catchfile}
 
-\makeindex[
-  options= -M yacht_captain -L russian -C utf8 -v -t yacht_captain.xindy.log
-]
+% \makeindex[
+%   options= -M yacht_captain -L russian -I xindy -C utf8 -v -t yacht_captain.glg -o yacht_captain.gls yacht_captain.glo
+% ]
 
-% \makeindex
+\makeindex
 
 % висячие и другие строки
 

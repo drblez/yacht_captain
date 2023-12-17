@@ -6,7 +6,7 @@
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("ncc" "a4paper" "12pt" "twoside" "final" "book" "russian" "fittopage" "cyremdash" "openright")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("babel" "russian") ("PTSerif" "scaled=0.9") ("PTSans" "scaled=0.9") ("PTMono" "scaled=0.9") ("imakeidx" "xindy" "truexindy") ("placeins" "section") ("ncchdr" "headings") ("caption" "font=small") ("adjustbox" "export")))
+                     '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("babel" "russian") ("PTSerif" "scaled=0.9") ("PTSans" "scaled=0.9") ("PTMono" "scaled=0.9") ("placeins" "section") ("ncchdr" "headings") ("caption" "font=small") ("adjustbox" "export")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
@@ -42,7 +42,6 @@
     "PTSans"
     "PTMono"
     "extdash"
-    "imakeidx"
     "wrapfig"
     "placeins"
     "booktabs"
