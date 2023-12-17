@@ -1,11 +1,16 @@
 \documentclass[a4paper, 12pt, twoside, final, book, russian, fittopage, cyremdash, openright]{ncc}
+\listfiles
 \usepackage[a4paper]{geometry}
 \geometry{verbose, tmargin=3cm, bmargin=3cm, lmargin=2cm, rmargin=1.5cm, headheight=1cm, headsep=1cm, footskip=1.5cm}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{extdash}
 \usepackage[russian]{babel}
-% \usepackage[xindy,truexindy]{imakeidx}
+%\usepackage{paratype}
+\usepackage[scaled=0.9]{PTSerif}
+\usepackage[scaled=0.9]{PTSans}
+\usepackage[scaled=0.9]{PTMono}
+\usepackage{extdash}
+\usepackage[xindy,truexindy]{imakeidx}
 \usepackage{wrapfig}
 \usepackage[section]{placeins}
 \usepackage{booktabs}
@@ -28,15 +33,17 @@
 \usepackage[font=small]{caption}
 \usepackage{xfrac}
 \usepackage{accents}
-\usepackage{tikz}
-
+% \usepackage{tikz}
+\usepackage{subcaption}
 \usepackage[export]{adjustbox}
+\usepackage{xstring}
+\usepackage{catchfile}
 
-% \makeindex[
-%   options= -M yacht_captain -L russian -C utf8 -v -t yacht_captain.xindy.log
-% ]
+\makeindex[
+  options= -M yacht_captain -L russian -C utf8 -v -t yacht_captain.xindy.log
+]
 
-\makeindex
+% \makeindex
 
 % висячие и другие строки
 
@@ -103,6 +110,7 @@
 \newcommand{\grmm}[2]{\ensuremath{#1\gr\,#2'}}
 \newcommand{\grmmss}[3]{\ensuremath{#1\gr\,#2'\,#3''}}
 
+\newcommand{\picsource}[1]{\href{#1}{Источник}}
 \newcommand{\CCBYSA}[1]{\href{https://creativecommons.org/licenses/by-sa/3.0/}{CC BY-SA #1.0}}
 
 \newcommand{\p}[1]{\paragraph{#1.}\label{par:#1}}
@@ -134,10 +142,6 @@
 \makeatother
 
 \graphicspath{{pics/}}
-
-% Two required libraries
-\usepackage{xstring}
-\usepackage{catchfile}
 
 % Set user input
 \newcommand{\gitfolder}{.git}             % Relative path to .git folder from .tex file
@@ -194,6 +198,7 @@
 \include{appendix1}
 \include{appendix2}
 \include{appendix3}
+\include{appendix4}
 
 \printindex
 

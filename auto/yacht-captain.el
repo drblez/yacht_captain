@@ -6,14 +6,14 @@
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("ncc" "a4paper" "12pt" "twoside" "final" "book" "russian" "fittopage" "cyremdash" "openright")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("babel" "russian") ("placeins" "section") ("ncchdr" "headings") ("caption" "font=small") ("adjustbox" "export")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+                     '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("babel" "russian") ("PTSerif" "scaled=0.9") ("PTSans" "scaled=0.9") ("PTMono" "scaled=0.9") ("imakeidx" "xindy" "truexindy") ("placeins" "section") ("ncchdr" "headings") ("caption" "font=small") ("adjustbox" "export")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
@@ -31,13 +31,18 @@
     "appendix1"
     "appendix2"
     "appendix3"
+    "appendix4"
     "ncc"
     "ncc12"
     "geometry"
     "fontenc"
     "inputenc"
-    "extdash"
     "babel"
+    "PTSerif"
+    "PTSans"
+    "PTMono"
+    "extdash"
+    "imakeidx"
     "wrapfig"
     "placeins"
     "booktabs"
@@ -60,7 +65,7 @@
     "caption"
     "xfrac"
     "accents"
-    "tikz"
+    "subcaption"
     "adjustbox"
     "xstring"
     "catchfile")
@@ -70,6 +75,7 @@
     '("lp" 1)
     '("p" 1)
     '("CCBYSA" 1)
+    '("picsource" 1)
     '("grmmss" 3)
     '("grmm" 2)
     '("hhmmss" 3)
@@ -127,8 +133,6 @@
     "gitfolder")
    (LaTeX-add-labels
     "par:#1")
-   (LaTeX-add-environments
-    '("verse" LaTeX-env-args ["argument"] 0))
    (LaTeX-add-array-newcolumntypes
     "M"))
  :latex)
