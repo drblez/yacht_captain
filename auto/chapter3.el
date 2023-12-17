@@ -1,6 +1,16 @@
 (TeX-add-style-hook
  "chapter3"
  (lambda ()
+   (setq TeX-command-extra-options
+         "-shell-escape")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (LaTeX-add-labels
     "fig:32"
     "fig:33"
@@ -18,6 +28,8 @@
     "fig:44"
     "fig:45"
     "fig:46")
+   (LaTeX-add-environments
+    '("verse" LaTeX-env-args ["argument"] 0))
    (LaTeX-add-index-entries
     "яхта!крейсерская"
     "яхта!туристская"
@@ -33,6 +45,7 @@
     "якорь!завозной"
     "верп"
     "дрек"
+    "жвака-галс"
     "устройство!швартовое"
     "устройство!рулевое"
     "устройство!леерное"
