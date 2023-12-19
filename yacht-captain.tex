@@ -14,7 +14,7 @@
 % \usepackage[xindy]{imakeidx}
 % \usepackage{index}
 \usepackage{wrapfig}
-\usepackage[section]{placeins}
+\usepackage[above,below,section]{placeins}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{hyperref}
@@ -40,6 +40,7 @@
 \usepackage{xstring}
 \usepackage{catchfile}
 %\usepackage{microtype}
+\usepackage{float}
 
 \overfullrule=1mm
 
@@ -55,6 +56,10 @@
 \widowpenalty=10000
 
 \righthyphenmin=2 % разрешаем переносить два последних символа
+
+\setlength{\columnsep}{25pt}
+
+\sloppy
 
 \renewcommand{\bfdefault}{b} % плотный жирный
 
@@ -172,7 +177,7 @@
 
 Скомпилировано \today
 
-{\normalsize \tableofcontents}
+{\small \tableofcontents}
 {\small \listoffigures}
 {\small \listoftables}
 

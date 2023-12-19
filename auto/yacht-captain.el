@@ -6,7 +6,7 @@
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("ncc" "a4paper" "12pt" "twoside" "final" "book" "russian" "fittopage" "cyremdash" "openright")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("babel" "russian") ("adjustbox" "export") ("placeins" "section") ("ncchdr" "headings") ("caption" "font=small")))
+                     '(("geometry" "a4paper") ("fontenc" "T2A") ("inputenc" "utf8") ("babel" "russian") ("adjustbox" "export") ("placeins" "above" "below" "section") ("ncchdr" "headings") ("caption" "font=small")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
@@ -63,7 +63,8 @@
     "xfrac"
     "accents"
     "xstring"
-    "catchfile")
+    "catchfile"
+    "float")
    (TeX-add-symbols
     '("douwidehat" 2)
     '("uwidehat" 1)
