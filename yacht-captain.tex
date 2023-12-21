@@ -17,6 +17,8 @@
 \usepackage[above,below,section]{placeins}
 \usepackage{booktabs}
 \usepackage{longtable}
+\usepackage{afterpage}
+\usepackage{xltabular}
 \usepackage{hyperref}
 \usepackage{xspace}
 \usepackage[headings]{ncchdr}
@@ -41,6 +43,7 @@
 \usepackage{catchfile}
 %\usepackage{microtype}
 \usepackage{float}
+\usepackage{footnotehyper}
 
 \overfullrule=1mm
 
@@ -118,9 +121,6 @@
 \newcommand{\ppp}{\ensuremath{\text{п.}}}
 \newcommand{\grmm}[2]{\ensuremath{#1\gr\,#2'}}
 \newcommand{\grmmss}[3]{\ensuremath{#1\gr\,#2'\,#3''}}
-
-\newcommand{\picsource}[1]{\href{#1}{Источник}}
-\newcommand{\CCBYSA}[1]{\href{https://creativecommons.org/licenses/by-sa/3.0/}{CC BY-SA #1.0}}
 
 \newcommand{\p}[1]{\paragraph{#1.}\label{par:#1}}
 \newcommand{\lp}[1]{#1~\pageref{par:#1}}

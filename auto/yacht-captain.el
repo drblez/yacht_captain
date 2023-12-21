@@ -44,6 +44,8 @@
     "placeins"
     "booktabs"
     "longtable"
+    "afterpage"
+    "xltabular"
     "hyperref"
     "xspace"
     "ncchdr"
@@ -64,14 +66,13 @@
     "accents"
     "xstring"
     "catchfile"
-    "float")
+    "float"
+    "footnotehyper")
    (TeX-add-symbols
     '("douwidehat" 2)
     '("uwidehat" 1)
     '("lp" 1)
     '("p" 1)
-    '("CCBYSA" 1)
-    '("picsource" 1)
     '("grmmss" 3)
     '("grmm" 2)
     '("hhmmss" 3)

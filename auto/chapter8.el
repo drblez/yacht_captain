@@ -3,13 +3,13 @@
  (lambda ()
    (setq TeX-command-extra-options
          "-shell-escape")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "chapter8-a")
@@ -22,12 +22,12 @@
     "fig:nimbostratus"
     "fig:fractostratus"
     "fig:112"
-    "fig:113"
     "fig:114"
     "fig:altostratus-translucidus"
     "fig:115"
     "fig:cirrocumulus"
     "fig:cirrostratus"
+    "fig:113"
     "tab:5"
     "fig:116"
     "tab:6"
@@ -44,8 +44,6 @@
     "fig:125"
     "fig:126"
     "fig:127")
-   (LaTeX-add-environments
-    '("verse" LaTeX-env-args ["argument"] 0))
    (LaTeX-add-index-entries
     "барометр!анероид"
     "термометр-атташе"
