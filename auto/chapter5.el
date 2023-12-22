@@ -20,6 +20,7 @@
     "sec:maps")
    (LaTeX-add-index-entries
     "лоция морская"
+    "бухта"
     "порт"
     "port"
     "рейд"
@@ -46,7 +47,6 @@
     "fairway"
     "канал"
     "canal"
-    "бухта"
     "bay"
     "фьорд"
     "fiord"

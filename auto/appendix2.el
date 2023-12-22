@@ -4,6 +4,8 @@
    (LaTeX-add-labels
     "app:2"
     "app:2a"
-    "app:2b"))
+    "app:2b")
+   (LaTeX-add-index-entries
+    "банка"))
  :latex)
 
