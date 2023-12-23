@@ -5,51 +5,106 @@
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
+
+% The package provides several macros to adjust boxed content. One purpose is
+% to supplement the standard graphics package, which defines the macros
+% \resizebox, \scalebox and \rotatebox , with the macros\trimbox and \clipbox.
+% The main feature is the general \adjustbox macro which extends the “key=value”
+% interface of \includegraphics from the graphics package and applies it to
+% general text content. Additional provided box macros are \lapbox, \marginbox,
+% \minsizebox, \maxsizebox and \phantombox.
+%
+% export Exports the keys of \adjustbox to \includegraphics so that they can be
+% used with this macro as well. Note that not all keys will works properly with
+% \includegraphics as its internal code does not support all features. If problems
+% occur the option Export should be used. For new documents it is recommended to
+% use the macro \adjustimage{〈keys〉}{〈filename〉} instead.
 \usepackage[export]{adjustbox}
-%\usepackage{paratype}
-%\usepackage[scaled=0.9]{PTSerif}
-%\usepackage[scaled=0.9]{PTSans}
-%\usepackage[scaled=0.9]{PTMono}
+
+% \usepackage{paratype}
+% \usepackage[scaled=0.9]{PTSerif}
+% \usepackage[scaled=0.9]{PTSans}
+% \usepackage[scaled=0.9]{PTMono}
+
+% The package implements the commands \Hyphdash, \Endash, \Emdash, and their
+% *-forms, to control hyphenation of compound words and ordinary words dashed
+% by em-dash. You can also use the shortcuts \-/, \=/, \--, \==, \---, and \=== instead.
 \usepackage{extdash}
-% \usepackage[xindy]{imakeidx}
-% \usepackage{index}
+
+% Allows figures or tables to have text wrapped around them. Does not work in
+% combination with list environments, but can be used in a parbox or minipage,
+% and in twocolumn format. Supports the float package.
 \usepackage{wrapfig}
+
 % \usepackage[above,below,section]{placeins}
+
+% The package enhances the quality of tables in LATEX, providing extra commands
+% as well as behind-the-scenes optimisation. Guidelines are given as to what
+% constitutes a good table in this context. From version 1.61, the package
+% offers longtable compatibility.
 \usepackage{booktabs}
+
 \usepackage{longtable}
 \usepackage{afterpage}
 \usepackage{xltabular}
 \usepackage{hyperref}
+
+% Define commands that appear not to eat spaces
 \usepackage{xspace}
+
 \usepackage[headings]{ncchdr}
+
+% Use comma as decimal separator in mathematics
 \usepackage{ncccomma}
+
+% The package implements the desclist environment and redefines the description
+% environment to provide an optional parameter as a prototype for calculation
+% the hang indent of the list.
 \usepackage{desclist}
+
+% Indent first paragraph after section header
 \usepackage{indentfirst}
+
+% 
 \usepackage{upgreek}
 \usepackage{marvosym}
-\usepackage{multirow}
-\usepackage{multicol}
 \usepackage{amsfonts}
+
+% which provides a construction for table cells that span more than
+% one row of the table;
+\usepackage{multirow}
+
+% An environment for multicolumn output
+\usepackage{multicol}
+
+% This package gives the enumerate environment an optional argument which
+% determines the style in which the counter is printed.
 \usepackage{enumerate}
+
+% A package for rotated objects in LATEX
 \usepackage{rotating}
+
+% A new implementation of LATEX’s tabular and array environment
 \usepackage{array}
+
+% This package provides an alternative interface to the LATEX2ε graphics functions.
+% The command names provided are the same as in the standard package,
+% and they use the same internal functions. However the meaning of the
+% optional arguments is different. 
 \usepackage{graphicx}
 \usepackage[font=small]{caption}
 \usepackage{xfrac}
 \usepackage{accents}
-%\usepackage{tikz}
-%\usepackage{subcaption}
 \usepackage{xstring}
 \usepackage{catchfile}
-%\usepackage{microtype}
 \usepackage{float}
 \usepackage{footnotehyper}
 
-\overfullrule=1mm
+% Sometimes this makes a page-width figure appear before  a column-width
+% figure that should precede it. This problem can be fixed by adding
+\usepackage{stfloats}
 
-% \makeindex[
-%   options= -M yacht_captain -L russian -I xindy -C utf8 -v -t yacht_captain.glg -o yacht_captain.gls yacht_captain.glo
-% ]
+\overfullrule=1mm
 
 \makeindex
 
@@ -114,6 +169,7 @@
 \newcommand{\TSun}{\ensuremath{T^{\text{\Sun}}}}
 \newcommand{\tSun}{\ensuremath{t^{\text{\Sun}}}}
 \newcommand{\TNo}{\ensuremath{T_{\text{\No}}}\xspace}
+\newcommand{\NoC} {\cidx{\No}{C}\xspace}
 \newcommand{\mathNo}{\text{\No}}
 \newcommand{\hhmm}[2]{\ensuremath{#1\thr~#2\tmin}}
 \newcommand{\hhmmss}[3]{\ensuremath{#1\thr~#2\tmin~#3\tsec}}
@@ -121,6 +177,7 @@
 \newcommand{\ppp}{\ensuremath{\text{п.}}}
 \newcommand{\grmm}[2]{\ensuremath{#1\gr\,#2'}}
 \newcommand{\grmmss}[3]{\ensuremath{#1\gr\,#2'\,#3''}}
+\newcommand{\starName}[1]{\scalebox{1.5}{\raisebox{-0.2ex}{$\ast$}}#1}
 
 \newcommand{\p}[1]{\paragraph{#1.}\label{par:#1}}
 \newcommand{\lp}[1]{#1~\pageref{par:#1}}
@@ -163,6 +220,25 @@
 
 \setcounter{tocdepth}{3}
 
+\renewcommand{\topfraction}{0.8}
+\renewcommand{\dbltopfraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\setcounter{totalnumber}{4}
+\setcounter{topnumber}{4}
+\setcounter{bottomnumber}{4}
+
+% \SetTOCStyle{стиль} задает стиль оформления содержания, списка рисунков и
+% таблиц. Используется в преамбуле документа. Стиль по умолчанию пуст.
+% Ноапример, чтобы вывести содержание размером \small, воспользуйтесь
+% командой \SetTOCStyle{\small}.
+\SetTOCStyle{\small}
+
+% \PnumPrototype{число} задает прототип номера страницы, используемого для вычисления
+% величины правого отступа в содержании документа. По умолчанию прототип равен
+% 99. Если в документе более 99 страниц, то вставьте команду \PnumPrototype{999} в
+% преамбулу документа.
+\PnumPrototype{999}
+
 \begin{document}
 
 \frontmatter
@@ -177,9 +253,9 @@
 
 Скомпилировано \today
 
-{\small \tableofcontents}
-{\small \listoffigures}
-{\small \listoftables}
+\tableofcontents
+\listoffigures
+\listoftables
 
 \mainmatter
 

@@ -53,9 +53,9 @@
     "indentfirst"
     "upgreek"
     "marvosym"
+    "amsfonts"
     "multirow"
     "multicol"
-    "amsfonts"
     "enumerate"
     "rotating"
     "array"
@@ -66,12 +66,14 @@
     "xstring"
     "catchfile"
     "float"
-    "footnotehyper")
+    "footnotehyper"
+    "stfloats")
    (TeX-add-symbols
     '("douwidehat" 2)
     '("uwidehat" 1)
     '("lp" 1)
     '("p" 1)
+    '("starName" 1)
     '("grmmss" 3)
     '("grmm" 2)
     '("hhmmss" 3)
@@ -122,6 +124,7 @@
     "TSun"
     "tSun"
     "TNo"
+    "NoC"
     "mathNo"
     "Tgr"
     "ppp"
