@@ -20,12 +20,12 @@
     "sec:maps")
    (LaTeX-add-index-entries
     "лоция морская"
+    "гавань"
     "бухта"
     "порт"
     "port"
     "рейд"
     "roadstead"
-    "гавань"
     "harbour"
     "бассейн"
     "dock basin"
