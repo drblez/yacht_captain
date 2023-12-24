@@ -14,4 +14,4 @@ then
         echo "Usage: pdfsplit input.pdf first_page last_page <output file format>"
         exit 1
 fi
-gs -dNOPAUSE -dBATCH -sOutputFile="$4" -dFirstPage=$2 -dLastPage=$3 -sDEVICE=jpeg -r300x300 "$1"
+gs -dNOPAUSE -dBATCH -sOutputFile="$4" -dFirstPage=$2 -dLastPage=$3 -sDEVICE=jpeg -r600x600 "$1"

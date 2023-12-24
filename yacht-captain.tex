@@ -131,7 +131,7 @@
 \newcommand{\vidx}[2]{\ensuremath{\cidx{\ve #1}{#2}}\xspace}
 \newcommand{\gr}{\ensuremath{^\circ}\xspace}
 \newcommand{\grC}{\ensuremath{^{\circ}C}\xspace}
-\newcommand{\midelsign}{\includegraphics[scale=0.035]{midel_sign_vec.eps}\xspace}
+\newcommand{\midelsign}{\includegraphics[width=1em]{midel_sign_vec.eps}\xspace}
 % \newcommand{\otdo}{\,\ensuremath{\div}\,}
 \newcommand{\otdo}{--}
 \newcommand{\motdo}{\div}
@@ -178,6 +178,14 @@
 \newcommand{\grmm}[2]{\ensuremath{#1\gr\,#2'}}
 \newcommand{\grmmss}[3]{\ensuremath{#1\gr\,#2'\,#3''}}
 \newcommand{\starName}[1]{\scalebox{1.5}{\raisebox{-0.2ex}{$\ast$}}#1}
+\newcommand{\starSign}{\scalebox{1.5}{\raisebox{-0.2ex}{\ast}}}
+\newcommand{\SunriseA}{\ensuremath{{\widehat{\text{\Sun}}}}\xspace}
+\newcommand{\Sunset} {\ensuremath{{\uwidehat{\text{\Sun}}}}\xspace}
+
+\newcommand{\alphaStar}[1]{$\upalpha$~#1}
+\newcommand{\deltaStar}[1]{$\updelta$~#1}
+
+\newcommand{\coord}[2]{\ensuremath{#1\gr#2'}}
 
 \newcommand{\p}[1]{\paragraph{#1.}\label{par:#1}}
 \newcommand{\lp}[1]{#1~\pageref{par:#1}}
@@ -238,6 +246,16 @@
 % 99. Если в документе более 99 страниц, то вставьте команду \PnumPrototype{999} в
 % преамбулу документа.
 \PnumPrototype{999}
+
+\usepackage{lcd}
+
+\newcommand{\keyDiv}{\fbox{$\div$}\xspace}
+\newcommand{\keyMul}{\fbox{$\times$}\xspace}
+\newcommand{\keyPlus}{\fbox{+}\xspace}
+\newcommand{\keyMinus}{\fbox{$-$}\xspace}
+\newcommand{\keyF}[1]{\fbox{\texttt{F}}\space\fbox{\texttt{#1}}\xspace}
+\newcommand{\keyEq}{\fbox{=}\xspace}
+\newcommand{\lcdD}[1]{\textLCD{10}|#1|}
 
 \begin{document}
 

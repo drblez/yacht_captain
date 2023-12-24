@@ -38,6 +38,13 @@
     "fig:93"
     "sec:7-4"
     "fig:94"
-    "sec:7-5"))
+    "fig:95"
+    "eq:71"
+    "fig:96"
+    "sec:7-5"
+    "fig:97"
+    "fig:98")
+   (LaTeX-add-index-entries
+    "высота светила"))
  :latex)
 
