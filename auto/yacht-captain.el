@@ -42,9 +42,10 @@
     "extdash"
     "wrapfig"
     "booktabs"
+    "tabularx"
+    "makecell"
     "longtable"
     "afterpage"
-    "xltabular"
     "hyperref"
     "xspace"
     "ncchdr"
@@ -69,6 +70,7 @@
     "footnotehyper"
     "stfloats")
    (TeX-add-symbols
+    '("appnav" ["argument"] 1)
     '("douwidehat" 2)
     '("uwidehat" 1)
     '("lp" 1)
@@ -76,6 +78,7 @@
     '("coord" 2)
     '("deltaStar" 1)
     '("alphaStar" 1)
+    '("bigfrac" 2)
     '("starName" 1)
     '("grmmss" 3)
     '("grmm" 2)
@@ -124,6 +127,7 @@
     "tmin"
     "thr"
     "tsec"
+    "SunPower"
     "TSun"
     "tSun"
     "TNo"
@@ -134,6 +138,7 @@
     "starSign"
     "SunriseA"
     "Sunset"
+    "taustar"
     "uhat"
     "gitfolder")
    (LaTeX-add-labels

@@ -16,6 +16,7 @@
     "sec:7-1"
     "fig:87"
     "fig:88"
+    "eq:56"
     "fig:89"
     "eq:58"
     "sec:7-2"
@@ -23,6 +24,7 @@
     "fig:91"
     "fig:92"
     "eq:59"
+    "cruiserfix"
     "eq:60"
     "eq:61"
     "eq:62"
@@ -43,7 +45,13 @@
     "fig:96"
     "sec:7-5"
     "fig:97"
-    "fig:98")
+    "fig:98"
+    "fig:99"
+    "fig:100"
+    "fig:101"
+    "fig:102"
+    "eq:72"
+    "eq:73")
    (LaTeX-add-index-entries
     "высота светила"))
  :latex)

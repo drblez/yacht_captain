@@ -44,9 +44,15 @@
 % offers longtable compatibility.
 \usepackage{booktabs}
 
+% for tabularx environment
+\usepackage{tabularx}
+
+% for \makecell command
+\usepackage{makecell}
+
 \usepackage{longtable}
 \usepackage{afterpage}
-\usepackage{xltabular}
+% \usepackage{xltabular}
 \usepackage{hyperref}
 
 % Define commands that appear not to eat spaces
@@ -166,6 +172,7 @@
 \newcommand{\tmin}{\ensuremath{^\text{м}}\xspace}
 \newcommand{\thr}{\ensuremath{^\text{ч}}\xspace}
 \newcommand{\tsec}{\ensuremath{^\text{с}}\xspace}
+\newcommand{\SunPower}{\ensuremath{^\text{Sun}}}
 \newcommand{\TSun}{\ensuremath{T^{\text{\Sun}}}}
 \newcommand{\tSun}{\ensuremath{t^{\text{\Sun}}}}
 \newcommand{\TNo}{\ensuremath{T_{\text{\No}}}\xspace}
@@ -181,14 +188,19 @@
 \newcommand{\starSign}{\scalebox{1.5}{\raisebox{-0.2ex}{\ast}}}
 \newcommand{\SunriseA}{\ensuremath{{\widehat{\text{\Sun}}}}\xspace}
 \newcommand{\Sunset} {\ensuremath{{\uwidehat{\text{\Sun}}}}\xspace}
+\newcommand\bigfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
 
 \newcommand{\alphaStar}[1]{$\upalpha$~#1}
 \newcommand{\deltaStar}[1]{$\updelta$~#1}
+
+\newcommand{\taustar}{$\uptau^*$\xspace}
 
 \newcommand{\coord}[2]{\ensuremath{#1\gr#2'}}
 
 \newcommand{\p}[1]{\paragraph{#1.}\label{par:#1}}
 \newcommand{\lp}[1]{#1~\pageref{par:#1}}
+
+\newcommand*{\appnav}[2][4]{\ref{app:#1}~\textit{#2}}
 
 \newcolumntype{M}{>{\centering\arraybackslash}m{\dimexpr.25\linewidth-2\tabcolsep}}
 
