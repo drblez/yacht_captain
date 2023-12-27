@@ -167,12 +167,12 @@
 \newcommand{\AP}{\cidx{A}{П}\xspace}
 \newcommand{\Ost}{\ensuremath{{O^{st}}}\xspace}
 \newcommand{\tauAries}{\ensuremath{\uptau^{\text{\Aries}}}\xspace}
-%\newcommand{\tAries}{\ensuremath{t^{\text{\Aries}}}\xspace}
+\newcommand{\tAries}{\ensuremath{t^{\text{\Aries}}}\xspace}
 \newcommand{\tday}{\ensuremath{^\text{д}}\xspace}
 \newcommand{\tmin}{\ensuremath{^\text{м}}\xspace}
 \newcommand{\thr}{\ensuremath{^\text{ч}}\xspace}
 \newcommand{\tsec}{\ensuremath{^\text{с}}\xspace}
-\newcommand{\SunPower}{\ensuremath{^\text{Sun}}}
+\newcommand{\SunPower}{\ensuremath{^\text{\Sun}}}
 \newcommand{\TSun}{\ensuremath{T^{\text{\Sun}}}}
 \newcommand{\tSun}{\ensuremath{t^{\text{\Sun}}}}
 \newcommand{\TNo}{\ensuremath{T_{\text{\No}}}\xspace}
@@ -180,7 +180,8 @@
 \newcommand{\mathNo}{\text{\No}}
 \newcommand{\hhmm}[2]{\ensuremath{#1\thr~#2\tmin}}
 \newcommand{\hhmmss}[3]{\ensuremath{#1\thr~#2\tmin~#3\tsec}}
-\newcommand{\Tgr}{\cidx{T}{ГР}\xspace}
+\newcommand{\Tgr}{\cidx{T}{гр}\xspace}
+\newcommand{\tGR}{\cidx{t}{гр}\xspace}
 \newcommand{\ppp}{\ensuremath{\text{п.}}}
 \newcommand{\grmm}[2]{\ensuremath{#1\gr\,#2'}}
 \newcommand{\grmmss}[3]{\ensuremath{#1\gr\,#2'\,#3''}}
@@ -194,8 +195,6 @@
 \newcommand{\deltaStar}[1]{$\updelta$~#1}
 
 \newcommand{\taustar}{$\uptau^*$\xspace}
-
-\newcommand{\coord}[2]{\ensuremath{#1\gr#2'}}
 
 \newcommand{\p}[1]{\paragraph{#1.}\label{par:#1}}
 \newcommand{\lp}[1]{#1~\pageref{par:#1}}
@@ -237,6 +236,17 @@
 \StrBehind[2]{\head}{/}[\branch]                          % Parse out the path only
 \CatchFileDef{\commit}{\gitfolder/refs/heads/\branch}{}  % Get the content of the branch head
 \StrGobbleRight{\commit}{1}[\commithash]                  % Remove end of line character
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes,shadows}
+
+\tikzstyle{abstract}=[rectangle, draw=black, rounded corners, text centered, text=black]
+
+\newcommand{\keyN}[1]{%
+\begin{tikzpicture} \node (Item) [abstract]{\textbf{#1}};%
+\end{tikzpicture}}
+
+\newcommand{\keyGRMMSS}{\keyN{$\circ$ ' ''}}
 
 \setcounter{tocdepth}{3}
 

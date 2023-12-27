@@ -68,14 +68,15 @@
     "catchfile"
     "float"
     "footnotehyper"
-    "stfloats")
+    "stfloats"
+    "tikz")
    (TeX-add-symbols
     '("appnav" ["argument"] 1)
+    '("keyN" 1)
     '("douwidehat" 2)
     '("uwidehat" 1)
     '("lp" 1)
     '("p" 1)
-    '("coord" 2)
     '("deltaStar" 1)
     '("alphaStar" 1)
     '("bigfrac" 2)
@@ -123,6 +124,7 @@
     "AP"
     "Ost"
     "tauAries"
+    "tAries"
     "tday"
     "tmin"
     "thr"
@@ -134,13 +136,15 @@
     "NoC"
     "mathNo"
     "Tgr"
+    "tGR"
     "ppp"
     "starSign"
     "SunriseA"
     "Sunset"
     "taustar"
     "uhat"
-    "gitfolder")
+    "gitfolder"
+    "keyGRMMSS")
    (LaTeX-add-labels
     "par:#1")
    (LaTeX-add-array-newcolumntypes
