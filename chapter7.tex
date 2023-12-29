@@ -1555,14 +1555,60 @@ $\KP_i$ помощник регистрирует и записывает пок
   \begin{table*}
     \centering
     \footnotesize
+    Таблица к примеру 10: \\
     Расчёт \IP Солнца и поправки компаса на калькуляторе \\
-    \begin{tabularx}{\linewidth}{r|l|l|X}
+    \begin{tabularx}{\linewidth}{r|l|X}
       \toprule
-      1 & & \keyN{ON} или \keyN{AC} & Включите калькулятор или очистите экран \\
+      1 & \keyN{ON} или \keyN{AC}
+      & Включите калькулятор или очистите экран \\
+      2 & \keySETUP \keyN{3} \keySETUP \keyN{1} \keyN{2}
+      & Переведите калькулятор в режим работы с градусами \\ 
       \midrule
-      2 & & 52 \keyGRMMSS 6,4 \keyGRMMSS & Запишем \cidx{t}{м} в регистр \textbf{A} \\
+      3 & \keyNum{52} \keyGMS \keyNum{6,4} \keyGMS \keySTO \keyA
+      & Запишем \cidx{t}{м} в регистр \textbf{A} \\
+      4 & \keyNum{38} \keyGMS \keyNum{35,4} \keyGMS \keySTO \keyB
+      & Запишем $\varphi$ в регистр \textbf{B} \\
+      5 & \keyNum{8} \keyGMS \keyNum{55,6} \keyGMS \keySTO \keyC
+      & Запишем $\delta$ в регистр \textbf{C} \\
+      \midrule
+       6 & \keyarctan \keysin \keyALPHA \keyA \keyRbr & Получим значение $A' = -71.743 (NW)$ \\
+       7 & \keyDIV \keyLbr \keyLbr \keytan \keyALPHA \keyC \keyRbr \\
+       8 & \keyMINUS \keytan \keyALPHA \keyB \keyRbr & или \keyPLUS если $\delta$ южное \\
+       9 & \keycos \keyALPHA \keyA \keyRbr \keyRbr \\
+      10 & \keycos \keyALPHA \keyB \keyRbr \keyRbr \keyRbr \keyEQ \\
+      \midrule
+      11 & Если $A'$ положительно, то $\cidx{A}{П} = A'$,  иначе: \\
+      12 & \keyANS \keyPLUS \keyNum{180} \keyEQ & Получим $\cidx{A}{П} = 108.257 (NW) $ \\
+      \midrule
+      13 & Если \cidx{A}{П} $N\Ost$, то $\IP=\cidx{A}{П}$,  иначе: \\
+      14 & \keyNum{360} \keyMINUS \keyANS & Получим $\IP=251.7\gr$ \\
+      \midrule
+      15 & \keyANS \keyMINUS \keyNum{253,3}
+      & Вычтем получившийся \IP из \KP.
+        Получим поправку компаса $\Delta K = -1,6\gr$ \\
+      \bottomrule
     \end{tabularx}
   \end{table*}
+
+  \textbf{Примечания к  таблице расчета на калькуляторе.}
+
+  П.~3\==10. Решение выполняется простым набором аргументов и последовательным нажатием клавиш операций, в ходе чего реализуется формула:
+  \begin{equation}
+    \label{eq:70}
+    \tg A = \frac{\sin t_M}
+                {(\tg \delta - \tg \varphi \cos t_M) \cos \varphi }
+  \end{equation}
+
+  П.~11--12. Формула дает азимут полукругового счета \-- первая буква
+  его наименования одинакова с наименованием широты места наблюдений,
+  вторая определяется по наименованию часового угла в полукруговом
+  счете. Полезно сравнить полученный \cidx{А}{П} с \KP светила для
+  проверки правильности его наименования соответственно стороне
+  горизонта, на которой наблюдали светило (на востоке или на западе).
+
+  П.~13--14. Правило перевода \cidx{A}{П} в \IP дано для плавания в
+  северных широтах.
+
 \end{small}
 
 Для быстрого вычисления \IP светила с погрешностью до 1\gr, приемлемой

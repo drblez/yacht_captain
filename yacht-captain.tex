@@ -241,13 +241,37 @@
 \usetikzlibrary{positioning,shapes,shadows}
 
 \tikzstyle{abstract}=[rectangle, draw=black, rounded corners, text centered, text=black]
+\tikzstyle{enter}=[rectangle, draw=white, rounded corners, text centered, text=black]
 
 \newcommand{\keyN}[1]{%
 \begin{tikzpicture} \node (Item) [abstract]{\textbf{#1}};%
 \end{tikzpicture}}
 
-\newcommand{\keyGRMMSS}{\keyN{$\circ$ ' ''}}
+\newcommand{\keyNum}[1]{%
+\begin{tikzpicture} \node (Item) [enter]{\texttt{#1}};%
+\end{tikzpicture}}
 
+\newcommand{\keyGMS}{\keyN{$\circ$ ' ''}\xspace}
+\newcommand{\keySHIFT}{\keyN{SHIFT}\xspace}
+\newcommand{\keyRCL}{\keyN{RCL}\xspace}
+\newcommand{\keySTO}{\keySHIFT\keyN{STO {\tiny RCL}}\xspace}
+\newcommand{\keyALPHA}{\keyN{ALPHA}\xspace}
+\newcommand{\keyA}{\keyN{A {\tiny(-)}}\xspace}
+\newcommand{\keyB}{\keyN{B {\tiny $\circ$ ' ''}}\xspace}
+\newcommand{\keyC}{\keyN{C {\tiny hyp}}\xspace}
+\newcommand{\keysin}{\keyN{sin}\xspace}
+\newcommand{\keycos}{\keyN{cos}\xspace}
+\newcommand{\keytan}{\keyN{tan}\xspace}
+\newcommand{\keyarctan}{\keySHIFT \keyN{tan$^-1$ {\tiny tan}}\xspace}
+\newcommand{\keyRbr}{\keyN{)}\xspace}
+\newcommand{\keyLbr}{\keyN{(}\xspace}
+\newcommand{\keyDIV}{\keyN{$\div$}\xspace}
+\newcommand{\keyPLUS}{\keyN{$+$}\xspace}
+\newcommand{\keyMINUS}{\keyN{$-$}\xspace}
+\newcommand{\keyANS}{\keyN{ANS}\xspace}
+\newcommand{\keyEQ}{\keyN{$=$}\xspace}
+\newcommand{\keySETUP}{\keySHIFT \keyN{SETUP \tiny{MODE}}\xspace}
+  
 \setcounter{tocdepth}{3}
 
 \renewcommand{\topfraction}{0.8}

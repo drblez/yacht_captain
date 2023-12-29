@@ -72,6 +72,7 @@
     "tikz")
    (TeX-add-symbols
     '("appnav" ["argument"] 1)
+    '("keyNum" 1)
     '("keyN" 1)
     '("douwidehat" 2)
     '("uwidehat" 1)
@@ -144,7 +145,26 @@
     "taustar"
     "uhat"
     "gitfolder"
-    "keyGRMMSS")
+    "keyGMS"
+    "keySHIFT"
+    "keyRCL"
+    "keySTO"
+    "keyALPHA"
+    "keyA"
+    "keyB"
+    "keyC"
+    "keysin"
+    "keycos"
+    "keytan"
+    "keyarctan"
+    "keyRbr"
+    "keyLbr"
+    "keyDIV"
+    "keyPLUS"
+    "keyMINUS"
+    "keyANS"
+    "keyEQ"
+    "keySETUP")
    (LaTeX-add-labels
     "par:#1")
    (LaTeX-add-array-newcolumntypes
