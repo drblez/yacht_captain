@@ -78,6 +78,7 @@
     '("uwidehat" 1)
     '("lp" 1)
     '("p" 1)
+    '("epsilonStar" 1)
     '("deltaStar" 1)
     '("alphaStar" 1)
     '("bigfrac" 2)
