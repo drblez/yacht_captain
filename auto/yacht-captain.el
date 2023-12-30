@@ -57,7 +57,7 @@
     "amsfonts"
     "multirow"
     "multicol"
-    "enumerate"
+    "enumitem"
     "rotating"
     "array"
     "graphicx"

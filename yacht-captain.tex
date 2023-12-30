@@ -75,6 +75,7 @@
 \usepackage{upgreek}
 \usepackage{marvosym}
 \usepackage{amsfonts}
+% \usepackage{mathptmx}
 
 % which provides a construction for table cells that span more than
 % one row of the table;
@@ -83,9 +84,7 @@
 % An environment for multicolumn output
 \usepackage{multicol}
 
-% This package gives the enumerate environment an optional argument which
-% determines the style in which the counter is printed.
-\usepackage{enumerate}
+\usepackage{enumitem}
 
 % A package for rotated objects in LATEX
 \usepackage{rotating}
@@ -292,6 +291,10 @@
 % 99. Если в документе более 99 страниц, то вставьте команду \PnumPrototype{999} в
 % преамбулу документа.
 \PnumPrototype{999}
+
+% Для всех itemize установим --- вместо жирной точки
+\setlist{leftmargin=0pt,wide=0pt}
+\setlist[itemize]{label=---}
 
 \begin{document}
 
