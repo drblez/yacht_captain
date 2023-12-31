@@ -160,6 +160,7 @@
     "keytan"
     "keyarctan"
     "keyarccos"
+    "keyarcsin"
     "keyRbr"
     "keyLbr"
     "keyDIV"

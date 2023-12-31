@@ -1642,11 +1642,13 @@ $\KP_i$ помощник регистрирует и записывает пок
       5 & \keyNum{8} \keyGMS \keyNum{55,6} \keyGMS \keySTO \keyC
       & Запишем $\delta$ в регистр \textbf{C} \\
       \midrule
-       6 & \keyarctan \keysin \keyALPHA \keyA \keyRbr & Получим значение $A' = -71.743 (NW)$ \\
-       7 & \keyDIV \keyLbr \keyLbr \keytan \keyALPHA \keyC \keyRbr \\
-       8 & \keyMINUS \keytan \keyALPHA \keyB \keyRbr & \keyMINUS заменить \keyPLUS если $\delta$ южное \\
-       9 & \keycos \keyALPHA \keyA \keyRbr \keyRbr \\
-      10 & \keycos \keyALPHA \keyB \keyRbr \keyRbr \keyRbr \keyEQ \\
+      6 & \keyarctan \keysin \keyALPHA \keyA \keyRbr \\
+      7 & \keyDIV \keyLbr \keyLbr \keytan \keyALPHA \keyC \keyRbr \\
+      8 & \keyMINUS \keytan \keyALPHA \keyB \keyRbr
+      & \keyMINUS заменить \keyPLUS если $\delta$ южное \\
+      9 & \keycos \keyALPHA \keyA \keyRbr \keyRbr \\
+      10 & \keycos \keyALPHA \keyB \keyRbr \keyRbr \keyRbr \keyEQ
+      & Получим значение $A' = -71.743 (NW)$ \\
       \midrule
       11 & Если $A'$ положительно, то $\cidx{A}{П} = A'$,  иначе: \\
       12 & \keyANS \keyPLUS \keyNum{180} \keyEQ & Получим $\cidx{A}{П} = 108.257 (NW) $ \\
@@ -2447,13 +2449,13 @@ $$ S_0 = \tAries_0 = \hhmmss{20}{14}{24}.$$
     Таблица к примеру 15: \\
     Продолжая схему вычисления азимута (из примера~10) после выполнения п.п.~11\==12, имеем:\\
     \begin{tabularx}{\linewidth}{r|l|X}
-      \midrule
+      \toprule
       13 & \keyANS \keySTO \keyD & Сохраним рассчитанное значение \cidx{A}{П} в регистр \textbf{D} \\
       \midrule
-      14 & \keyarccos \keyLbr \keyNum{1} \keyDIV \keysin \keyD \keyRbr \keyRbr \\
-      15 & \keycos \keyC \keyRbr \keysin \keyA \keyRbr \keyRbr \keyEQ \\
+      14 & \keyarccos \keyLbr \keyNum{1} \keyDIV \keysin \keyALPHA \keyD \keyRbr \keyRbr \\
+      15 & \keycos \keyALPHA \keyC \keyRbr \keysin \keyALPHA \keyA \keyRbr \keyRbr \keyEQ \\
       16 & \keyANS \keyGMS \keyEQ & Получим $h_C = \grmmss{34}{49}{23}$ \\
-      \midrule
+      \bottomrule
     \end{tabularx}
   \end{table*}
 
@@ -2479,7 +2481,33 @@ $$\sin h_C = \cos \varphi \cos \delta (\tg \varphi \tg \delta + \cos \cidx{t}{м
 
   \textbf{А.} Высота \starName{Арктур} 26~июля 1983~г. по условию примера~12.
 
-  % TODO: calculator
+  \begin{table*}[!htb]
+    \centering
+    \footnotesize
+    Таблица к примеру 16: \\
+    \begin{tabularx}{\linewidth}{r|l|X}
+      \toprule
+      1 & \keyN{ON} или \keyN{AC}
+      & Включите калькулятор или очистите экран \\
+      2 & \keySETUP \keyN{3} \keySETUP \keyN{1} \keyN{2}
+      & Переведите калькулятор в режим работы с градусами \\ 
+      \midrule
+      3 & \keyNum{40} \keyGMS \keyNum{24,3} \keyGMS \keySTO \keyA
+      & Запишем \cidx{t}{м} в регистр \textbf{A} \\
+      4 & \keyNum{59} \keyGMS \keyNum{35,4} \keyGMS \keySTO \keyB
+      & Запишем $\varphi_C$ в регистр \textbf{B} \\
+      5 & \keyNum{19} \keyGMS \keyNum{16,4} \keyGMS \keySTO \keyC
+      & Запишем $\delta$ в регистр \textbf{C} \\
+      \midrule
+      6 & \keyarcsin \keycos \keyALPHA \keyB \keyRbr \keycos \keyALPHA \keyC \keyRbr \\
+      7 & \keyLbr \keytan \keyALPHA \keyB \keyRbr \keytan \keyALPHA \keyC \keyRbr \keyPLUS
+      & \keyPLUS заменить на \keyMINUS при склонении разноименном с широтой места \\
+      8 & \keycos \keyALPHA \keyA \keyRbr \keyRbr \keyRbr \keyEQ & $h_C = 40.582$ \\
+      \midrule
+      9 & \keyANS \keyGMS \keyEQ & Получим $h_C = \grmmss{40}{34}{55}$ \\
+      \bottomrule
+    \end{tabularx}
+  \end{table*}
 
   \textbf{Ответ:} высота счислимая $h_C = \grmm{40}{34,9}$.  В
   примере~11.А имели: $h = \grmm{40}{38,1}$; перенос $n = +3,2'$.
@@ -2496,8 +2524,8 @@ $$\sin h_C = \cos \varphi \cos \delta (\tg \varphi \tg \delta + \cos \cidx{t}{м
 
   % TODO: calculator
   
-  последовательно по пп. 1 -10 <<клавишного алгоритма>>, получаем hc =
-  46°00,6'.
+  последовательно по пп. 1-9 <<клавишного алгоритма>>, получаем
+  $ h_C = \grmm{46}{00,6}$.
 
   В примере 11.Б имели: $h = \grmm{45}{53,9}$; перенос $n = h - h_C = -6,7'$;
   по номограмме $\IP_C = 176\gr$.
