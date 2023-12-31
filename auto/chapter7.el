@@ -58,7 +58,9 @@
     "fig:105"
     "eq:74"
     "eq:75"
-    "fig:106")
+    "fig:106"
+    "eq:76"
+    "eq:77")
    (LaTeX-add-index-entries
     "высота светила"))
  :latex)
