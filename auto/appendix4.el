@@ -14,6 +14,7 @@
    (TeX-run-style-hooks
     "appendix4-2")
    (LaTeX-add-labels
-    "app:4"))
+    "app:4"
+    "fig:147"))
  :latex)
 

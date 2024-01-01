@@ -87,6 +87,7 @@
     '("bigfrac" 2)
     '("starName" 1)
     '("grmmss" 3)
+    '("grmmr" 3)
     '("grmm" 2)
     '("hhmmss" 3)
     '("hhmm" 2)
