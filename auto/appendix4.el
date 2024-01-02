@@ -12,9 +12,12 @@
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
-    "appendix4-2")
+    "appendix4-2"
+    "appendix4-7-2")
    (LaTeX-add-labels
     "app:4"
-    "fig:147"))
+    "fig:147"
+    "fig:148"
+    "fig:149"))
  :latex)
 
