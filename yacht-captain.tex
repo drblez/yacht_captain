@@ -54,6 +54,13 @@
 \usepackage{afterpage}
 % \usepackage{xltabular}
 \usepackage{hyperref}
+\hypersetup{unicode=true,%
+  colorlinks,%
+  citecolor=black,%
+  filecolor=black,%
+  linkcolor=black,%
+  urlcolor=black,%
+  pdftex}
 
 % Define commands that appear not to eat spaces
 \usepackage{xspace}
@@ -112,9 +119,19 @@
 \usepackage{cclicenses}
 
 \usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\large\bfseries}{\thesection{}.}{1em}{}
 
-\titleformat*{\section}{\Large\bfseries}
-\titleformat*{\subsection}{\large\bfseries}
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}{\thesubsection{}.}{1em}{}
+
+\titleformat{\subsubsection}
+{\normalfont\normalsize\bfseries}{\thesubsubsection{}.}{1em}{}
+
+\show\section
+\show\subsection
+\show\subsubsection
+\show\startsection
 
 \overfullrule=1mm
 
@@ -207,7 +224,7 @@
 
 \newcommand{\taustar}{\ensuremath{\uptau^*}\xspace}
 
-\newcommand{\p}[1]{\paragraph{#1.}\label{par:#1}}
+\newcommand{\p}[1]{\noindent\textbf{#1.}\label{par:#1}}
 \newcommand{\lp}[1]{#1~\pageref{par:#1}}
 
 \newcommand*{\appnav}[2][4]{\ref{app:#1}~\textit{#2}}
@@ -306,6 +323,11 @@
 % 99. Если в документе более 99 страниц, то вставьте команду \PnumPrototype{999} в
 % преамбулу документа.
 \PnumPrototype{999}
+
+% \noeqbreak, \alloweqbreak управляют возможностью разрыва страницы
+% перед выключной формулой. Первая команда запрещает разрыв, а вторая
+% разрешает. По умолчанию действует \alloweqbreak.
+\noeqbreak
 
 % Для всех itemize установим --- вместо жирной точки
 \setlist{leftmargin=0pt,wide=0pt,noitemsep,nosep}
