@@ -13,9 +13,7 @@
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (LaTeX-add-labels
     "sec:ppmp"
-    "fig:pp01"
     "fig:pp02"
-    "fig:pp03"
     "fig:pp04"
     "fig:pp05"
     "fig:pp06"
