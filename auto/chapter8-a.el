@@ -14,10 +14,6 @@
    (LaTeX-add-labels
     "sec:ppmp"
     "fig:pp02"
-    "fig:pp04"
-    "fig:pp05"
-    "fig:pp06"
-    "fig:pp07"
     "fig:pp08"
     "fig:pp09"
     "fig:pp10"
