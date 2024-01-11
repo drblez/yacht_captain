@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   sodipodi:docname="lighthouse_sign.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="48.632432"
+     inkscape:cx="397.37885"
+     inkscape:cy="560.97338"
+     inkscape:window-width="1536"
+     inkscape:window-height="1212"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g5"
+       inkscape:label="star"
+       transform="translate(-25.063132,-3.526903)">
+      <path
+         sodipodi:type="star"
+         style="fill:#000000;stroke:#000000;stroke-width:0.1"
+         id="path4"
+         inkscape:flatsided="false"
+         sodipodi:sides="5"
+         sodipodi:cx="127.74195"
+         sodipodi:cy="147.93105"
+         sodipodi:r1="2.7743893"
+         sodipodi:r2="1.3871946"
+         sodipodi:arg1="0.97361967"
+         sodipodi:arg2="1.6019382"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m 129.30202,150.22526 -1.60326,-0.90769 -1.65665,0.80614 0.36783,-1.80528 -1.27862,-1.32646 1.8306,-0.20803 0.86642,-1.62594 0.76353,1.67671 1.8141,0.32158 -1.35871,1.24429 z"
+         inkscape:transform-center-x="-0.026693044"
+         inkscape:transform-center-y="-0.23941588"
+         transform="translate(2.431869,4.2672418)" />
+      <circle
+         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.3"
+         id="path5-7"
+         cx="130.2016"
+         cy="152.27945"
+         r="1"
+         inkscape:label="white" />
+    </g>
+  </g>
+</svg>

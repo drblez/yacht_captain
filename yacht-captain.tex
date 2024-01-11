@@ -116,6 +116,10 @@
 % figure that should precede it. This problem can be fixed by adding
 \usepackage{stfloats}
 
+\usepackage{amsmath}
+% для groupequation
+% \usepackage{amsmath,stackengine}
+
 \usepackage{cclicenses}
 
 \usepackage{titlesec}
@@ -237,6 +241,13 @@
   \mathpalette\douwidehat{#1}%
 }
 
+%\newcommand\groupequation[2][17pt]{%
+%  \setbox0=\hbox{$\displaystyle#2$}%
+%  \stackengine{0pt}{\copy0}{%
+%    \makebox[\linewidth]{\hfill$\left.\rule{0pt}{\ht0}\right\}$\kern#1}}
+%  {O}{c}{F}{T}{L}
+%}
+  
 \makeatletter
 \newcommand{\douwidehat}[2]{%
   \sbox0{$\m@th#1\widehat{\hphantom{#2}}$}%
@@ -348,6 +359,8 @@
 % (whereas penalties are usually set in the hundreds by default and
 % have a maximum value of ±10000). The exact algorithm is explained in
 % the TeXbook and in most books on the subject.
+
+% \newcounter{figure}
 
 \begin{document}
 
